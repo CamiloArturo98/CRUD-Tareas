@@ -1,4 +1,4 @@
-export class Storage {
+class Storage {
     static getTask(){
         return JSON.parse(localStorage.getItem("tasks")) || [];
     }

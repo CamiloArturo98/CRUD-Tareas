@@ -1,4 +1,4 @@
-export class Task {
+class Task {
     constructor( id, title, description, priority ){
         this.id = id;
         this.title = title;
