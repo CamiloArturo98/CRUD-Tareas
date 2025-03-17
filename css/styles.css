@@ -1,27 +1,93 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
+body {
+    background-color: #121212; /* Fondo oscuro */
+    color: white;
+    font-family: Arial, sans-serif;
     text-align: center;
 }
 
-form{
+h1 {
     margin-bottom: 20px;
 }
 
-input, select, button {
-    margin: 5px;
-    padding: 10px;
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    width: 320px;  /* Ajuste para centrar */
+    margin: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-table{
-    width: 100px;
+input, select, button {
+    width: 100%;
+    max-width: 280px; /* Limita el tamaño */
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #1a1a2e;
+    color: white;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+select {
+    appearance: none; /* Quitar estilo por defecto */
+    cursor: pointer;
+}
+
+button {
+    background-color: #6a5acd;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #5a4eb0;
+}
+
+/* Estilos para el filtro de prioridad */
+#filterByPriority {
+    width: 200px; /* Reducir tamaño */
+    margin: 20px auto;
+    display: block;
+    background-color: #1a1a2e;
+}
+
+/* Estilos para la tabla */
+table {
+    width: 80%;
+    margin: 20px auto;
     border-collapse: collapse;
 }
 
-th, td{
-    width: 100%;
+th, td {
     padding: 10px;
+    border: 1px solid #444;
 }
 
-button{
-    cursor: pointer;
+th {
+    background-color: #333;
+}
+
+td {
+    background-color: #222;
+}
+
+button.edit {
+    background-color: #ffcc00;
+    color: black;
+}
+
+button.delete {
+    background-color: #ff4444;
+    color: white;
 }
